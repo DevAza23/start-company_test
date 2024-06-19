@@ -1,310 +1,421 @@
-                                            * {
-                                                padding: 0;
-                                                margin: 0;
-                                                box-sizing: border-box;
-                                                font-family: 'Poppins', sans-serif;
-                                            }
-                                            
-                                            .wrapper {
-                                                width: 100%;
-                                                overflow: hidden;
-                                            }
-                                            
-                                            .header {
-                                                background-color: rgba(116, 198, 157, 1);
-                                            }
-                                            
-                                            .navbar {
-                                                max-width: 1220px;
-                                                margin: 0 auto;
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                padding: 30px 20px;
-                                            }
-                                            
-                                            .logo {
-                                                text-decoration: none;
-                                                color: #fff;
-                                                font-size: 24px;
-                                                font-weight: bold;
-                                            }
-                                            
-                                            .nav {}
-                                            
-                                            .nav-list {
-                                                list-style: none;
-                                                display: flex;
-                                                gap: 20px;
-                                            }
-                                            
-                                            .nav-item {
-                                                text-decoration: none;
-                                                color: #fff;
-                                            }
-                                            
-                                            .nav-item:hover {
-                                                color: #000;
-                                                border-bottom: 2px solid #ff1414;
-                                                padding-bottom: 4px;
-                                            }
-                                            
-                                            .nav-item a {
-                                                text-decoration: none;
-                                                color: #fff;
-                                            }
-                                            
-                                            .part-one {
-                                                background-color: rgba(116, 198, 157, 1);
-                                                height: 585px;
-                                                margin-bottom: 67px;
-                                            }
-                                            
-                                            .part-one-father {
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                max-width: 1220px;
-                                                margin: 0 auto;
-                                                padding: 50px 10px;
-                                            }
-                                            
-                                            .part-one-son {}
-                                            
-                                            .part-one_title {
-                                                margin-bottom: 20px;
-                                                align-items: center;
-                                                color: #fff;
-                                            }
-                                            
-                                            .part-one_text {
-                                                margin-bottom: 15px;
-                                                color: #fff;
-                                            }
-                                            
-                                            .part-one_text-two {
-                                                margin-bottom: 25px;
-                                                color: #fff;
-                                            }
-                                            
-                                            .part-one_btn {
-                                                width: 170px;
-                                                height: 40px;
-                                                padding: 10px 20px;
-                                                background-color: #ffffff;
-                                                color: #000000;
-                                                border: none;
-                                                border-radius: 5px;
-                                                align-self: flex-start;
-                                                /* Выровнять кнопку по началу (слева) */
-                                                margin-top: auto;
-                                                /* Переместить кнопку вниз */
-                                                padding: 10px 20px;
-                                                background-color: #fff;
-                                                border: none;
-                                                cursor: pointer;
-                                            }
-                                            
-                                            .part-one_btn:hover {
-                                                background-color: #2bff00;
-                                                color: #000000;
-                                                border: 1px solid #67f600;
-                                            }
-                                            
-                                            .part-one_img {}
-                                            
-                                            .burger {
-                                                display: none;
-                                                flex-direction: column;
-                                                gap: 5px;
-                                                cursor: pointer;
-                                            }
-                                            
-                                            .burger div {
-                                                width: 25px;
-                                                height: 3px;
-                                                background-color: white;
-                                            }
-                                            
-                                            @media (max-width: 768px) {
+                                                * {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    box-sizing: border-box;
+                                                    font-family: 'Poppins', sans-serif;
+                                                }
+                                                
+                                                .wrapper {
+                                                    width: 100%;
+                                                    overflow: hidden;
+                                                }
+                                                
+                                                .header {
+                                                    background-color: rgba(116, 198, 157, 1);
+                                                }
+                                                
+                                                .navbar {
+                                                    max-width: 1220px;
+                                                    margin: 0 auto;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    padding: 30px 20px;
+                                                }
+                                                
+                                                .logo {
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                    font-size: 24px;
+                                                    font-weight: bold;
+                                                }
+                                                
+                                                .nav {}
+                                                
                                                 .nav-list {
+                                                    list-style: none;
+                                                    display: flex;
+                                                    gap: 20px;
+                                                }
+                                                
+                                                .nav-item {
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                }
+                                                
+                                                .nav-item:hover {
+                                                    color: #000;
+                                                    border-bottom: 2px solid #ff1414;
+                                                    padding-bottom: 4px;
+                                                }
+                                                
+                                                .nav-item a {
+                                                    text-decoration: none;
+                                                    color: #fff;
+                                                }
+                                                
+                                                .part-one {
+                                                    background-color: rgba(116, 198, 157, 1);
+                                                    height: 585px;
+                                                    margin-bottom: 67px;
+                                                }
+                                                
+                                                .part-one-father {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    max-width: 1220px;
+                                                    margin: 0 auto;
+                                                    padding: 50px 10px;
+                                                }
+                                                
+                                                .part-one-son {}
+                                                
+                                                .part-one_title {
+                                                    margin-bottom: 20px;
+                                                    align-items: center;
+                                                    color: #fff;
+                                                }
+                                                
+                                                .part-one_text {
+                                                    margin-bottom: 15px;
+                                                    color: #fff;
+                                                }
+                                                
+                                                .part-one_text-two {
+                                                    margin-bottom: 25px;
+                                                    color: #fff;
+                                                }
+                                                
+                                                .part-one_btn {
+                                                    width: 170px;
+                                                    height: 40px;
+                                                    padding: 10px 20px;
+                                                    background-color: #ffffff;
+                                                    color: #000000;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    align-self: flex-start;
+                                                    /* Выровнять кнопку по началу (слева) */
+                                                    margin-top: auto;
+                                                    /* Переместить кнопку вниз */
+                                                    padding: 10px 20px;
+                                                    background-color: #fff;
+                                                    border: none;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .part-one_btn:hover {
+                                                    background-color: #2bff00;
+                                                    color: #000000;
+                                                    border: 1px solid #67f600;
+                                                }
+                                                
+                                                .part-one_img {}
+                                                
+                                                .burger {
                                                     display: none;
                                                     flex-direction: column;
-                                                    background-color: #73c7a9;
-                                                    position: absolute;
-                                                    top: 60px;
-                                                    right: 20px;
-                                                    width: 200px;
-                                                    text-align: right;
-                                                    padding: 20px;
-                                                    border-radius: 5px;
+                                                    gap: 5px;
+                                                    cursor: pointer;
                                                 }
-                                                .burger {
-                                                    display: flex;
+                                                
+                                                .burger div {
+                                                    width: 25px;
+                                                    height: 3px;
+                                                    background-color: white;
                                                 }
-                                            }
-                                            
-                                            .part-two {
-                                                margin-bottom: 66px;
-                                            }
-                                            
-                                            .part-two-father {}
-                                            
-                                            .part-two-son {}
-                                            
-                                            .part-two_title {
-                                                text-align: center;
-                                                color: rgba(116, 198, 157, 1);
-                                                margin-bottom: 16px;
-                                            }
-                                            
-                                            .part-two_text {
-                                                text-align: center;
-                                                margin-bottom: 16px;
-                                            }
-                                            
-                                            .part-two_text-two {
-                                                text-align: center;
-                                                margin-bottom: 50px;
-                                            }
-                                            
-                                            .partners {
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: space-evenly;
-                                                margin-bottom: 50px;
-                                            }
-                                            
-                                            .part-two_img {
-                                                margin-right: 15px;
-                                            }
-                                            
-                                            .learmore {
-                                                text-align: center;
-                                                margin-bottom: 16px;
-                                            }
-                                            
-                                            .part-two_btn {
-                                                width: 170px;
-                                                height: 48px;
-                                                background: #000000;
-                                                border: 1px solid #000000;
-                                                border-radius: 10px;
-                                                color: #ffffff;
-                                                font-weight: 500;
-                                            }
-                                            
-                                            .part-two_btn:hover {
-                                                background-color: #2bff00;
-                                                color: #000000;
-                                                border: 1px solid #67f600;
-                                            }
-                                            
-                                            @media (max-width: 768px) {
+                                                
+                                                @media (max-width: 768px) {
+                                                    .nav-list {
+                                                        display: none;
+                                                        flex-direction: column;
+                                                        background-color: #73c7a9;
+                                                        position: absolute;
+                                                        top: 60px;
+                                                        right: 20px;
+                                                        width: 200px;
+                                                        text-align: right;
+                                                        padding: 20px;
+                                                        border-radius: 5px;
+                                                    }
+                                                    .burger {
+                                                        display: flex;
+                                                    }
+                                                }
+                                                
+                                                .part-two {
+                                                    margin-bottom: 66px;
+                                                }
+                                                
+                                                .part-two-father {}
+                                                
+                                                .part-two-son {}
+                                                
+                                                .part-two_title {
+                                                    text-align: center;
+                                                    color: rgba(116, 198, 157, 1);
+                                                    margin-bottom: 16px;
+                                                }
+                                                
+                                                .part-two_text {
+                                                    text-align: center;
+                                                    margin-bottom: 16px;
+                                                }
+                                                
+                                                .part-two_text-two {
+                                                    text-align: center;
+                                                    margin-bottom: 50px;
+                                                }
+                                                
                                                 .partners {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-evenly;
+                                                    margin-bottom: 50px;
+                                                }
+                                                
+                                                .part-two_img {
+                                                    margin-right: 15px;
+                                                }
+                                                
+                                                .learmore {
+                                                    text-align: center;
+                                                    margin-bottom: 16px;
+                                                }
+                                                
+                                                .part-two_btn {
+                                                    width: 170px;
+                                                    height: 48px;
+                                                    background: #000000;
+                                                    border: 1px solid #000000;
+                                                    border-radius: 10px;
+                                                    color: #ffffff;
+                                                    font-weight: 500;
+                                                }
+                                                
+                                                .part-two_btn:hover {
+                                                    background-color: #2bff00;
+                                                    color: #000000;
+                                                    border: 1px solid #67f600;
+                                                }
+                                                
+                                                @media (max-width: 768px) {
+                                                    .partners {
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                    }
+                                                    .part-two_img {
+                                                        width: 50%;
+                                                        margin: 10px 0;
+                                                        margin-bottom: 50px;
+                                                    }
+                                                    .part-two_img-last {
+                                                        width: 50%;
+                                                        margin: 10px 0;
+                                                    }
+                                                }
+                                                
+                                                .part-three {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 20px;
+                                                    margin-bottom: 50px;
+                                                    background-color: #ffffff;
+                                                    /* Настройте цвет фона по мере необходимости */
+                                                }
+                                                
+                                                .part-three-father {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    width: 100%;
+                                                    max-width: 1200px;
+                                                    /* Настройте максимальную ширину по мере необходимости */
+                                                }
+                                                
+                                                .part-three-son {
+                                                    flex: 1;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                }
+                                                
+                                                .part-three-son-text {
+                                                    margin-left: 70px;
+                                                    flex: 1;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: flex-start;
+                                                    /* Выровнять текст сверху */
+                                                    padding: 20px;
+                                                }
+                                                
+                                                .part-three_title {
+                                                    margin-bottom: 20px;
+                                                    color: #000;
+                                                }
+                                                
+                                                .part-three_text {
+                                                    margin-bottom: 20px;
+                                                    color: rgba(33, 37, 41, 0.5);
+                                                }
+                                                
+                                                .part-three-btn {
+                                                    width: 170px;
+                                                    height: 40px;
+                                                    padding: 10px 20px;
+                                                    background-color: #ffffff;
+                                                    color: #ffffff;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    align-self: flex-start;
+                                                    /* Выровнять кнопку по началу (слева) */
+                                                    margin-top: auto;
+                                                    /* Переместить кнопку вниз */
+                                                    padding: 10px 20px;
+                                                    background-color: #000000;
+                                                    border: none;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                @media only screen and (max-width: 768px) {
+                                                    .part-three {}
+                                                    .part-three-father {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                    }
+                                                    .part-three-son {
+                                                        order: -1;
+                                                        /* Это поместит изображение над текстом */
+                                                    }
+                                                    .part-three-son-text {
+                                                        width: 90%;
+                                                        padding: 10px;
+                                                    }
+                                                    .part-three_title {
+                                                        font-size: 20px;
+                                                    }
+                                                    .part-three_text {
+                                                        font-size: 14px;
+                                                    }
+                                                    .part-three-btn {
+                                                        padding: 10px 20px;
+                                                    }
+                                                    .part-three_img {
+                                                        width: 70%;
+                                                        margin: 10px 0;
+                                                        margin-bottom: 50px;
+                                                    }
+                                                }
+                                                
+                                                .team {
+                                                    display: flex;
+                                                    justify-content: space-evenly;
+                                                    margin-top: 50px;
+                                                    margin-bottom: 40px
+                                                }
+                                                
+                                                .person-one {
+                                                    width: 20%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    height: 300px;
+                                                    border-radius: 10px;
+                                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                                                    padding: 20px;
+                                                    /* Установите padding по краям */
+                                                    transition: all 0.3s ease-in-out;
+                                                    background-color: #f5f5f5;
+                                                }
+                                                
+                                                .person-one:hover {
+                                                    background-color: rgb(102, 101, 101);
+                                                }
+                                                
+                                                .person-one-img {
+                                                    align-items: center;
+                                                    margin-bottom: 20px
+                                                }
+                                                
+                                                .person-one-name {
+                                                    text-align: center;
+                                                    margin-bottom: 25px;
+                                                }
+                                                
+                                                .person-one-text {}
+                                                
+                                                .btn-team-f {
+                                                    display: flex;
                                                     flex-direction: column;
                                                     align-items: center;
                                                 }
-                                                .part-two_img {
-                                                    width: 50%;
-                                                    margin: 10px 0;
-                                                    margin-bottom: 50px;
+                                                
+                                                .btn-team {
+                                                    width: 170px;
+                                                    height: 48px;
+                                                    background: #000000;
+                                                    border: 1px solid #000000;
+                                                    border-radius: 10px;
+                                                    color: #ffffff;
+                                                    font-weight: 500;
                                                 }
-                                                .part-two_img-last {
-                                                    width: 50%;
-                                                    margin: 10px 0;
+                                                
+                                                .btn-team:hover {
+                                                    background-color: #2bff00;
+                                                    color: #000000;
+                                                    border: 1px solid #67f600;
                                                 }
-                                            }
-                                            
-                                            .part-three {
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                padding: 20px;
-                                                margin-bottom: 50px;
-                                                background-color: #ffffff;
-                                                /* Настройте цвет фона по мере необходимости */
-                                            }
-                                            
-                                            .part-three-father {
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: space-between;
-                                                width: 100%;
-                                                max-width: 1200px;
-                                                /* Настройте максимальную ширину по мере необходимости */
-                                            }
-                                            
-                                            .part-three-son {
-                                                flex: 1;
-                                                display: flex;
-                                                justify-content: center;
-                                            }
-                                            
-                                            .part-three-son-text {
-                                                margin-left: 70px;
-                                                flex: 1;
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: flex-start;
-                                                /* Выровнять текст сверху */
-                                                padding: 20px;
-                                            }
-                                            
-                                            .part-three_title {
-                                                margin-bottom: 20px;
-                                                color: #000;
-                                            }
-                                            
-                                            .part-three_text {
-                                                margin-bottom: 20px;
-                                                color: rgba(33, 37, 41, 0.5);
-                                            }
-                                            
-                                            .part-three-btn {
-                                                width: 170px;
-                                                height: 40px;
-                                                padding: 10px 20px;
-                                                background-color: #ffffff;
-                                                color: #ffffff;
-                                                border: none;
-                                                border-radius: 5px;
-                                                align-self: flex-start;
-                                                /* Выровнять кнопку по началу (слева) */
-                                                margin-top: auto;
-                                                /* Переместить кнопку вниз */
-                                                padding: 10px 20px;
-                                                background-color: #000000;
-                                                border: none;
-                                                cursor: pointer;
-                                            }
-                                            
-                                            @media only screen and (max-width: 768px) {
-                                                .part-three {}
-                                                .part-three-father {
+                                                
+                                                @media (max-width: 768px) {
+                                                    .team {
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                    }
+                                                    .person-one {
+                                                        width: 80%;
+                                                        /* Увеличение ширины карточек на мобильных устройствах */
+                                                        margin: 20px 0;
+                                                        /* Добавление вертикальных отступов между карточками */
+                                                    }
+                                                    .btn-team-f {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                    }
+                                                }
+                                                
+                                                .fot {
+                                                    height: 125px;
+                                                    background-color: rgba(116, 198, 157, 1);
+                                                }
+                                                
+                                                .footer {
                                                     display: flex;
-                                                    flex-direction: column;
+                                                    justify-content: space-between;
+                                                    padding: 50px;
                                                 }
-                                                .part-three-son {
-                                                    order: -1;
-                                                    /* Это поместит изображение над текстом */
-                                                }
-                                                .part-three-son-text {
-                                                    width: 90%;
-                                                    padding: 10px;
-                                                }
-                                                .part-three_title {
-                                                    font-size: 20px;
-                                                }
-                                                .part-three_text {
+                                                
+                                                .social {}
+                                                
+                                                .social-f {}
+                                                
+                                                .licence {}
+                                                
+                                                .text-f {
+                                                    color: white;
                                                     font-size: 14px;
+                                                    text-align: right;
                                                 }
-                                                .part-three-btn {
-                                                    padding: 10px 20px;
+                                                
+                                                @media (max-width: 768px) {
+                                                    .social {
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    .footer {
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
                                                 }
-                                                .part-three_img {
-                                                    width: 70%;
-                                                    margin: 10px 0;
-                                                    margin-bottom: 50px;
-                                                }
-                                            }
