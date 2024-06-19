@@ -30,6 +30,8 @@ mouse.addEventListener('touchend', () => {
 
 
 
+
+
 mouse.addEventListener('click', () => {
     mouse.style.transition = 'transform 0.2s, background-color 0.2s';
     mouse.style.transform = 'scale(0.95)';

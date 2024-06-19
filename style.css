@@ -419,3 +419,53 @@
                                                         align-items: center;
                                                     }
                                                 }
+                                                
+                                                .porfolio {
+                                                    padding: 20px;
+                                                    text-align: center;
+                                                }
+                                                
+                                                .works {
+                                                    padding-top: 50px;
+                                                    margin-bottom: 50px;
+                                                }
+                                                
+                                                .works-title {
+                                                    text-align: center;
+                                                    margin-bottom: 10px;
+                                                    color: rgba(116, 198, 157, 1);
+                                                }
+                                                
+                                                .works-text {
+                                                    text-align: center;
+                                                    margin-bottom: 5px;
+                                                }
+                                                
+                                                .text-works {
+                                                    text-align: center;
+                                                }
+                                                
+                                                .port {
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    justify-content: center;
+                                                    gap: 10px;
+                                                    margin-bottom: 25px;
+                                                }
+                                                
+                                                .works-img {
+                                                    width: 100%;
+                                                    height: auto;
+                                                }
+                                                
+                                                @media (min-width: 768px) {
+                                                    .works-img {
+                                                        width: 30%;
+                                                    }
+                                                }
+                                                
+                                                @media (min-width: 1024px) {
+                                                    .works-img {
+                                                        width: 30%;
+                                                    }
+                                                }
