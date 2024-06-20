@@ -206,9 +206,21 @@
                                                     align-items: center;
                                                 }
                                                 .part-two_img {
+                                                    display: none;
+                                                }
+                                                .part-two_img-last {
                                                     width: 50%;
                                                     margin: 10px 0;
-                                                    margin-bottom: 50px;
+                                                }
+                                            }
+                                            
+                                            @media (max-width: 430px) {
+                                                .partners {
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                                .part-two_img {
+                                                    display: none;
                                                 }
                                                 .part-two_img-last {
                                                     width: 50%;
