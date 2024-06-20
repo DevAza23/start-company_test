@@ -111,6 +111,18 @@
                                                 border: 1px solid #67f600;
                                             }
                                             
+                                            @media (max-width: 430px) {
+                                                .part-one_img {
+                                                    display: none;
+                                                }
+                                            }
+                                            
+                                            @media (max-width: 730px) {
+                                                .part-one_img {
+                                                    display: none;
+                                                }
+                                            }
+                                            
                                             .part-one_img {}
                                             
                                             .burger {
@@ -206,21 +218,9 @@
                                                     align-items: center;
                                                 }
                                                 .part-two_img {
-                                                    display: none;
-                                                }
-                                                .part-two_img-last {
                                                     width: 50%;
                                                     margin: 10px 0;
-                                                }
-                                            }
-                                            
-                                            @media (max-width: 430px) {
-                                                .partners {
-                                                    flex-direction: column;
-                                                    align-items: center;
-                                                }
-                                                .part-two_img {
-                                                    display: none;
+                                                    margin-bottom: 50px;
                                                 }
                                                 .part-two_img-last {
                                                     width: 50%;
